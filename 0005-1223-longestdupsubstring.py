@@ -78,9 +78,7 @@ class solution2:
         # print(f"mod : {target_hash_val % self.mod}")
         seen = {target_hash_val}
         for i in range(1, n- middle + 1):
-            # hash_value = (strhash[i + middle - 1] - strhash[i - 1]) % self.mod
-            # power = i - 0
-            # p_ = pow(self.p, power)
+            # hashing a substring efficiently see https://codeforces.com/blog/entry/12145
             b_hash_val = 0
             b_p_pow = 1
             for j in range(i, i + middle):
