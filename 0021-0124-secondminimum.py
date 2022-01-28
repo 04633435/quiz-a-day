@@ -1,3 +1,8 @@
+"""Note:
+    1: The paths of BFS are non decreasing (monotonically increasing)
+"""
+
+
 from collections import defaultdict, deque
 
 class Solution:
