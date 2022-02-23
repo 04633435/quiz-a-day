@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 class Solution:
     def check_ways(self, pairs):
         adj = defaultdict(set)
@@ -17,7 +19,7 @@ class Solution:
 
             currDegree = len(neighbours)
             parent = -1
-            parentDegree = maxsize
+            parentDegree = float("inf")
             # 根据 degree 的大小找到 node 的父节点 parent
             for neighbour in neighbours:
                 if currDegree <= len(adj[neighbour]) < parentDegree:

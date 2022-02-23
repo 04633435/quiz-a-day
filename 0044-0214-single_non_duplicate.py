@@ -2,6 +2,7 @@ from collections import Counter
 
 
 class Solution:
+    # Solution-1 O(n)
     def single_non_duplicate(self, nums):
         counter = Counter(nums)
         for i in counter.keys():
