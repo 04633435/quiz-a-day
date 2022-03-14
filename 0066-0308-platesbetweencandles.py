@@ -1,4 +1,5 @@
 class Solution:
+    # Solution-leetcode 前缀和
     def plates_between_candles(self, s, queries):
         n = len(s)
         preSum, sum = [0] * n, 0
